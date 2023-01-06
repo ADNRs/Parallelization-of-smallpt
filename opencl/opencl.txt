@@ -1,0 +1,52 @@
+>>>>> float <<<<<
+
+--- 20spp ---
+
+real	0m0.641s
+user	0m0.514s
+sys	0m0.120s
+
+--- 200spp ---
+
+real	0m3.025s
+user	0m2.899s
+sys	0m0.120s
+
+--- 2000spp ---
+
+real	0m27.552s
+user	0m27.424s
+sys	0m0.124s
+
+--- 20000spp ---
+
+real	4m37.345s
+user	4m37.257s
+sys	0m0.136s
+
+>>>>> double <<<<<
+
+--- 20spp ---
+
+real	0m3.484s
+user	0m3.364s
+sys	0m0.116s
+
+--- 200spp ---
+
+real	0m32.200s
+user	0m32.071s
+sys	0m0.128s
+
+--- 2000spp ---
+
+real	5m19.267s
+user	5m19.161s
+sys	0m0.160s
+
+--- 20000spp ---
+
+real	53m10.197s
+user	53m10.325s
+sys	0m0.500s
+
