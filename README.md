@@ -70,3 +70,16 @@ You can reproduce the whole experiment by running `./run.sh` under the root dire
 
 The experiment results running on I5-7500 and GTX 1060 are stored in `<version>/<version>.txt`. Under FP32, the fastest version is OpenCL, and the speedup relative to the base version is ~21x. Under FP64, the fastest version is CUDA, and the speedup relative to the base version is ~2.6x. It is worth noticing that the OpenCL version has ~1.3x speedup compared to the CUDA version under FP32.
 
+Table 1: Speedup relative to the base version, FP32
+| Version | 20 spp | 200 spp | 2,000 spp | 20,000 spp |
+| ------- | ------ | ------- | --------- | ---------- |
+| SIMD    | 1.08   | 1.10    | 1.11      | 1.09       |
+| OpenCL  | 9.37   | 19.49   | 21.44     | 20.99      |
+| CUDA    | 9.44   | 15.32   | 16.50     | 16.29      |
+
+Table 2: Speedup relative to the base version, FP64
+| Version | 20 spp | 200 spp | 2,000 spp | 20,000 spp |
+| ------- | ------ | ------- | --------- | ---------- |
+| SIMD    | 1.09   | 1.09    | 1.09      | 1.09       |
+| OpenCL  | 1.60   | 1.68    | 1.68      | 1.69       |
+| CUDA    | 2.40   | 2.59    | 2.61      | 2.61       |
