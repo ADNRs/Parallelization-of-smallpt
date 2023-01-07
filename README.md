@@ -66,9 +66,7 @@ nvcc -O3 smallpt_cuda.cu -o smallpt_cuda
 
 ## Experiment
 
-You can repeat the whole experiment by running `./run.sh` under the root directory, or just repeat the experiment of a single version you are interested in by running `<version>/run.sh`.
+You can reproduce the whole experiment by running `./run.sh` under the root directory, or just reproduce the experiment of a single version you are interested in by running `<version>/run.sh`.
 
-The experiment results running on I5-7500 and GTX 1060 are stored in `<version>/<version>.txt`.
-
-Under FP32, the fastest version is OpenCL, and the speedup relative to the base version is ~21x. Under FP64, the fastest version is CUDA, and the speedup relative to the base version is ~2.6x. It is worth noticing that the OpenCL version has ~1.3x speedup compared to the CUDA version under FP32.
+The experiment results running on I5-7500 and GTX 1060 are stored in `<version>/<version>.txt`. Under FP32, the fastest version is OpenCL, and the speedup relative to the base version is ~21x. Under FP64, the fastest version is CUDA, and the speedup relative to the base version is ~2.6x. It is worth noticing that the OpenCL version has ~1.3x speedup compared to the CUDA version under FP32.
 
