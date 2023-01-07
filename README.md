@@ -14,7 +14,7 @@ After `-O3` optimization, there is no room for vectorization. Despite this, I im
 
 ### OpenCL & CUDA versions
 
-I first ported the base version to OpenCL, and the parallelism was done by assigning each pixel to a thread. However, Intel Iris Xe Graphics seemed to have a time-out mechanism at least on Intel's OpenCL 3.0 NEO driver, to fix this, I also parallelized the sampling of each pixel.
+I first ported the base version to OpenCL, and the parallelism was done by assigning each pixel to a thread. However, Intel Iris Xe Graphics seemed to have a time-out mechanism at least on Intel OpenCL 3.0 NEO driver. To fix this, I also parallelized the sampling of each pixel.
 
 The CUDA version is almost identical to the OpenCL version. In fact, in these two versions, moving the scene to the local memory can reduce the memory access time. But since this optimization was done after the experiment, it is not shown in the source code.
 
